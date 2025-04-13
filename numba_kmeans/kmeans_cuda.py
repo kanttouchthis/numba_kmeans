@@ -58,7 +58,7 @@ def kmeans_cuda_batched(data_batch, n_clusters=3, max_iter=100, tol=1e-4, patien
         d_new_centroids = cuda.to_device(new_centroids)
         d_counts = cuda.to_device(counts)
 
-        update_centroids_batched[blocks_per_grid, threads_per_block](d_data, d_labels, d_new_centroids, d_counts, n_clusters)
+        update_centroids_batched[blocks_per_grid, threads_per_block](d_data, d_labels, d_new_centroids, d_counts)
         cuda.synchronize()
 
         centroids_host = d_new_centroids.copy_to_host()
