@@ -1,0 +1,77 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Test output
+htmlcov/
+coverage.xml
+*.cover
+.cache
+nosetests.xml
+*.log
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.coverage
+coverage/
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# pyproject tools
+__pypackages__/
+
+# Jupyter runtime
+*.nbconvert.ipynb
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# CUDA / numba build cache
+*.nv
+*.ptx
+*.cubin
+*.gpu
+*.ll
+*.bc
+.numba_cache/
